@@ -12,7 +12,7 @@
     <!-- Title Page-->
     <title>Register</title>
 
-    @include('partials/css');
+    @include('partials/css')
 
 </head>
 
@@ -24,14 +24,14 @@
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="#">
-                                <img src="{{asset('admin/images//icon/logo.png')}}" alt="CoolAdmin">
+                                <img src="{{asset('admin/images/icon/logo-blue.png')}}" alt="CoolAdmin">
                             </a>
                         </div>
                         <div class="login-form">
                             <form action="{{route('register')}}" method="post">
                                 @csrf
                                 <div class="form-group">
-                                    <label>Name</label>
+                                    <label>Nama</label>
                                     <input class="au-input au-input--full" type="text" name="name" placeholder="Nama">
                                 </div>
                                 <div class="form-group">
@@ -52,12 +52,6 @@
                                     </label>
                                 </div>
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">register</button>
-                                <div class="social-login-content">
-                                    <div class="social-button">
-                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">register with facebook</button>
-                                        <button class="au-btn au-btn--block au-btn--blue2">register with twitter</button>
-                                    </div>
-                                </div>
                             </form>
                             <div class="register-link">
                                 <p>
@@ -73,7 +67,8 @@
 
     </div>
 
-    @include('partials/script');
+    @include('partials/script')
+
 </body>
 
 </html>
